@@ -17,7 +17,8 @@ module.exports = {
   output: {
     path: path.join(__dirname, '/../dist/assets'),
     filename: 'app.js',
-    publicPath: defaultSettings.publicPath
+    // publicPath: defaultSettings.publicPath
+    publicPath: 'assets/'       // 改为相对路径
   },
   devServer: {
     contentBase: './src/',
