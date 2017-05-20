@@ -27,7 +27,7 @@ let initState = {
     reArrange: true
 }
 
-let store = createStore(changeImgs, initState);
+let store = createStore(changeImgs, initState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 class AppComponent extends React.Component {
 
